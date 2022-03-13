@@ -7,7 +7,7 @@
 
 
 
-> Homepage for a Blog, prototyped in Figma by RocketSeat.
+> Challenge of Homepage for a Blog, prototyped in Figma by RocketSeat.
 
 Link da aplicação: <a>http://jgsl-rocketblog.netlify.app</a>
 ### ⚙️ Adjustments and improvements
@@ -16,7 +16,7 @@ The project has been finished.
 
 - [x] Body with HTML.
 - [x] Stylization with CSS.
-
+- [x] Responsiveness
 ## 🤝 Collaborator
 
 <table>
@@ -37,3 +37,9 @@ Technologies used in the project:
 
 <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+
+## Credits
+
+> RocketSeat
+Figma: <a>https://www.figma.com/file/x41bsA5naSfXZRPESu06xl/DD-%2F-RocketBlog-(Copy)?node-id=312%3A152</a>
+Challenge Link: <a>https://app.rocketseat.com.br/discover/challenges/rocketblog</a>

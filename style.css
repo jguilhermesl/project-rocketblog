@@ -146,16 +146,14 @@ header ul  li:active {
 .main-home h2 {
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 210%;
     color: var(--button-bg)
 }
 
 .main-home p {
     font-family: var(--roboto);
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 110%;
     color: var(--light-purple);
     margin-top: 0.9rem;
 }
@@ -306,12 +304,36 @@ header ul  li:active {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 680px) {
     img {
         max-width: 350px;
     }
 
     .box-post {
        text-align: center;
+    }
+
+    .main-home h2 {
+        font-size: 2rem;
+    }
+
+    .main-home button {
+        margin: 2rem auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .main-home h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .main-home p {
+        font-size: 0.9rem;
+    }
+
+    .search {
+        width: 200px;
+        margin-top: 1rem;
     }
 }
