@@ -41,5 +41,7 @@ Technologies used in the project:
 ## Credits
 
 > RocketSeat
-Figma: <a>https://www.figma.com/file/x41bsA5naSfXZRPESu06xl/DD-%2F-RocketBlog-(Copy)?node-id=312%3A152</a>
-Challenge Link: <a>https://app.rocketseat.com.br/discover/challenges/rocketblog</a>
+<br>
+- Figma: <a>https://www.figma.com/file/x41bsA5naSfXZRPESu06xl/DD-%2F-RocketBlog-(Copy)?node-id=312%3A152</a>
+<br>
+- Challenge Link: <a>https://app.rocketseat.com.br/discover/challenges/rocketblog</a>
