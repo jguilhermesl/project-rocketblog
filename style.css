@@ -17,12 +17,11 @@
   }
 
 #home {
-    height: 85vh;
     background: var(--purple-bg);
 }
 
 header {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,6 +56,35 @@ header ul  li:hover {
 header ul  li:active {
     opacity: 0.7;
 }
+
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 1.2s;
+    
+}
+
+.line {
+    visibility: hidden;
+    width: 100%;
+    background-color: white;
+    height: .1rem;
+    box-shadow: 0.1rem 0.1rem 1px black ;
+} 
+
+.sidebar li {
+    width: 90%;
+    border-bottom: 1px solid rgb(75, 64, 64);
+}
+
 .search {
     width: 280px;
     height: 34px;
@@ -73,6 +101,7 @@ header ul  li:active {
     border: none;
     color: #fff;
     outline: none;
+    width: 85%;
     
 }
 
@@ -91,10 +120,27 @@ header ul  li:active {
 }
 
 .main-home {
-    width: 100vw;
-    height: 65vh;
+    width: 90vw;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.main-left {
+    width: 40%;
+}
+
+.main-righ {
+    width: 40%;
+}
+
+.main-right img {
+    width: 100%;
 }
 
 .main-home h2 {
@@ -112,18 +158,6 @@ header ul  li:active {
     line-height: 27px;
     color: var(--light-purple);
     margin-top: 0.9rem;
-}
-
-.main-left {
-    width: 570px;
-}
-
-.main-right {
-    width: 570px
-}
-
-.main-right img {
-    width: 100%;
 }
 
 .see-more button {
@@ -160,16 +194,21 @@ header ul  li:active {
 
 .body-top {
     margin-top: 2rem;
+    width: 90vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem auto 0 auto;
+    flex-wrap: wrap;
 }
 
 .body-top-left {
     width: 570px;
 }
 
-.body-top-left img {
+.main img {
     height: 300px;
+    margin: 0 auto;
 }
 
 .date {
@@ -203,9 +242,11 @@ header ul  li:active {
 
 .posts {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
+    flex-wrap: wrap;
     margin: 2rem auto 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .box-posts-right {
@@ -221,4 +262,56 @@ header ul  li:active {
 .box-post img {
     width: 100%;
     height: 260px;
+}
+
+@media only screen and (max-width: 930px) and (min-width: 700px) {
+    header ul li {
+        padding-right: 30px;
+    }
+
+    .search {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .line {
+        visibility: visible;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search {
+        width: 300px;
+        margin-top: 1rem;
+    }
+
+    header ul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px){
+    .main-right {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-left {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+        max-width: 350px;
+    }
+
+    .box-post {
+       text-align: center;
+    }
 }
